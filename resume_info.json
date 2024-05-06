@@ -1,0 +1,105 @@
+{
+  "titleNameMap": {
+    "educationList": "教育背景",
+    "workExpList": "工作经历",
+    "projectList": "项目经历",
+    "skillList": "个人技能",
+    "awardList": "更多信息",
+    "workList": "个人作品",
+    "aboutme": "自我介绍"
+  },
+  "avatar": {
+    "hidden": false
+  },
+  "profile": {
+    "name": "杨金羽",
+    "email": "2237515913@qq.com",
+    "mobile": "18601766657",
+    "github": "",
+    "zhihu": "",
+    "workExpYear": "1.5年",
+    "workPlace": "深圳/上海",
+    "positionTitle": "c++软件工程师"
+  },
+  "educationList": [
+    {
+      "edu_time": [
+        "2018.09.01",
+        "2022.06.30"
+      ],
+      "school": "上海交通大学",
+      "major": "电子科学与技术",
+      "academic_degree": "本科",
+      "dataIndex": 0
+    }
+  ],
+  "awardList": [
+    {
+      "award_info": "英语 CET6",
+      "award_time": "2021"
+    },
+    {
+      "award_info": "PAT甲级证书",
+      "award_time": "2022"
+    }
+  ],
+  "workExpList": [
+    {
+      "company_name": "minieye",
+      "department_name": "舱内系统部",
+      "work_time": [
+        "2023.05",
+        null
+      ],
+      "work_desc": "1. 担任系统部c++软件工程师，参与舱内感知产品的算法研发与测试，根据产品需求和使用场景，优化算法性能\r\n2. 负责回灌测试系统的前后端搭建与维护，可利用采集的视频数据进行批量迭代测试，分析算法性能表现\n3. 参与部门内部项目和通用工具的开发，为团队提供技术支持：如硬件回灌测试工具、模型资源测试工具、web视线可视化工具等"
+    }
+  ],
+  "skillList": [
+    {
+      "skill_name": "c/c++",
+      "skill_desc": "扎实的c++开发经验，熟悉常用数据结构和设计模式，熟悉多线程和网络编程",
+      "skill_level": 90
+    },
+    {
+      "skill_name": "python",
+      "skill_desc": "熟悉使用python编写脚本；熟悉web框架Flask的使用",
+      "skill_level": 85
+    },
+    {
+      "skill_name": "vue/javascript",
+      "skill_desc": "了解vue框架和javascript，熟悉前端开发流程",
+      "skill_level": 70
+    }
+  ],
+  "projectList": [
+    {
+      "project_name": "HIL回灌测试链路",
+      "project_role": "负责人",
+      "project_time": "2024.03 - 至今",
+      "project_desc": "为满足开发人员和测试对硬件回灌测试的需要，打通HIL硬件回灌测试链路，使用视频或实时图像喂给软件运行。",
+      "project_content": "\n1. 熟悉常用取图接口，集成取图和发送流程。通过websocket和软件通信，使用ACK机制控制发送速率。\n 2. 封装新的取图接口供软件集成，检测连接状态区分视频流是否结束 \n 3. 使用共享内存缓存图像数据，基于现有可视化工具，读取缓冲区数据和软件的绘制指令，可实时查看软件的运行结果。"
+    },
+    {
+      "project_name": "minieye舱内回灌测试系统",
+      "project_role": "负责人",
+      "project_time": "2023.10 - 至今",
+      "project_desc": "为了对采集的数据进行快速、高效、准确的回灌测试，搭建了一个基于B/S架构的系统来管理采集的数据，标注的真值，测试的结果。",
+      "project_content": "系统的核心部分是数据管理和迭代测试，具体包括数据导入、真值标注，在任务调度并执行完成后，系统比对真值和算法结果，最终形成结果与可视化页面的过程。\n1. 基于python实现软件执行的客户端程序，负责领取子任务，通过docker运行软件并生成结果的流程。 \n2.基于python的flask框架搭建后端服务，实现功能包括：支持用户注册与登录，项目的创建与成员管理， 项目软件的管理；通过AWS S3 Client连接公司的私有云，创建不同的测试集数据；创建任务，与客户端通过http进行通信，负责子任务的发布、回收与结果的生成。 \n3. 使用Vue搭建前端服务，为不同模块实现简单的操作页面；使用Echarts进行结果可视化页面的展示。"
+    },
+    {
+      "project_name": "基于Linux的WEB服务器",
+      "project_role": "负责人",
+      "project_time": "2022.01 - 2022.05",
+      "project_desc": "Linux环境下使用C++开发的WEB服务器，基于HTTP协议，支持客户端并发访问并能及时响应，支持客户端访问服务器的图片、视频资源。",
+      "project_content": "\n1. 基于reactor模式，使用socket进行通信\n 2. 使用epoll实现I/O多路复用，使用线程池处理HTTP请求\n 3. 实现了基本的GET和POST请求，支持静态资源的访问\n 4. 实现了定时器，支持定时关闭超时连接\n 5. 使用日志系统记录服务器运行状态 "
+    }
+  ],
+  "workList": [],
+  "aboutme": {
+    "aboutme_desc": "全栈软件工程师（侧重后端）， 技术栈包括c++/python/js，一年多实际开发经验，负责minieye舱内SIL测试系统的搭建与维护，参与了部门内部项目和通用工具的开发， 熟悉cv算法的部署流程，有android/qnx等平台的使用经验。\n   学习能力较好， 可根据需求快速掌握新的知识；善于协调与规划，完成效率高。\n    "
+  },
+  "theme": {
+    "color": "#2f5785",
+    "tagColor": "#8bc34a"
+  }
+}
